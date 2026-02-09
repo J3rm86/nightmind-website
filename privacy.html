@@ -76,6 +76,13 @@
             font-size: 0.9rem;
             margin-bottom: 20px;
         }
+        .highlight {
+            background: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
         footer {
             text-align: center;
             padding: 40px;
@@ -100,64 +107,68 @@
             <p class="effective-date">Effective Date: February 9, 2026</p>
 
             <h2>Introduction</h2>
-            <p>NightMind ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
+            <p>NightMind ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our mobile application.</p>
 
-            <h2>Information We Collect</h2>
+            <div class="highlight">
+                <strong>Privacy First:</strong> NightMind is designed with privacy at its core. Your dream journal data is stored locally on your device and encrypted. We do not collect, store, or have access to your personal data or dream content.
+            </div>
 
-            <p><strong>Information You Provide:</strong></p>
+            <h2>Information Storage</h2>
+            <p><strong>All data stays on your device:</strong></p>
             <ul>
-                <li><strong>Dream Entries:</strong> Text content of dreams you record in the app</li>
-                <li><strong>Voice Recordings:</strong> Audio recordings when you use the voice-to-text feature (processed locally on your device)</li>
-                <li><strong>Tags and Categories:</strong> Labels you assign to your dreams</li>
+                <li><strong>Dream Entries:</strong> Stored locally in an encrypted database on your device</li>
+                <li><strong>Voice Recordings:</strong> Processed entirely on your device and deleted after transcription</li>
+                <li><strong>Settings and Preferences:</strong> Stored locally on your device</li>
+            </ul>
+            <p>We do not have access to your dream content, and it is never uploaded to our servers for storage.</p>
+
+            <h2>What We Do NOT Collect</h2>
+            <ul>
+                <li>We do NOT collect analytics or usage data</li>
+                <li>We do NOT track your behavior in the app</li>
+                <li>We do NOT store your dream content on our servers</li>
+                <li>We do NOT sell or share any personal information</li>
             </ul>
 
-            <p><strong>Automatically Collected Information:</strong></p>
+            <h2>Cloud Features (Optional)</h2>
+            <p>When you choose to use AI-powered features (dream analysis or video generation), your dream text is temporarily sent to our secure servers for processing:</p>
             <ul>
-                <li><strong>Device Information:</strong> Device type and operating system version for app compatibility</li>
-                <li><strong>Usage Data:</strong> Anonymous analytics to improve app performance</li>
+                <li>Data is transmitted securely using encryption</li>
+                <li>Processing occurs on Cloudflare Workers</li>
+                <li>Your dream text is NOT stored after processing is complete</li>
+                <li>No personal identifiers are attached to the processing requests</li>
             </ul>
-
-            <h2>How We Use Your Information</h2>
-            <ul>
-                <li>To provide dream journaling and analysis features</li>
-                <li>To generate AI-powered dream interpretations and videos</li>
-                <li>To process in-app purchases and subscriptions</li>
-                <li>To improve our services and user experience</li>
-            </ul>
-
-            <h2>Data Storage and Security</h2>
-            <p><strong>Local Storage:</strong> Your dream entries are stored locally on your device in an encrypted database. We do not have access to your dream content unless you explicitly use cloud features.</p>
-
-            <p><strong>Voice Processing:</strong> Voice recordings are processed entirely on your device using on-device AI. Audio data is never transmitted to external servers.</p>
-
-            <p><strong>Cloud Features:</strong> When you use AI analysis or video generation features, dream text is sent to our secure servers (Cloudflare Workers) for processing. This data is not stored permanently and is deleted after processing.</p>
 
             <h2>Microphone Permission</h2>
-            <p>NightMind requests microphone access to enable voice recording of your dreams. This feature is optional. Voice recordings are:</p>
+            <p>NightMind requests microphone access to enable voice recording of your dreams. This feature is entirely optional. When you use voice recording:</p>
             <ul>
-                <li>Processed locally on your device</li>
-                <li>Converted to text using on-device AI (Whisper)</li>
-                <li>Never uploaded to external servers</li>
-                <li>Deleted after transcription is complete</li>
+                <li>Audio is processed locally on your device using on-device AI</li>
+                <li>Voice recordings are NEVER uploaded to external servers</li>
+                <li>Audio files are automatically deleted after transcription</li>
             </ul>
 
             <h2>Third-Party Services</h2>
-            <p>We use the following third-party services:</p>
+            <p>We use minimal third-party services:</p>
             <ul>
-                <li><strong>RevenueCat:</strong> For subscription and purchase management</li>
-                <li><strong>Cloudflare:</strong> For secure API hosting and content delivery</li>
+                <li><strong>RevenueCat:</strong> For processing subscriptions and purchases (handles payment data securely)</li>
+                <li><strong>Cloudflare:</strong> For secure API hosting when using AI features</li>
+            </ul>
+            <p>These services have their own privacy policies and do not receive your dream content.</p>
+
+            <h2>Data Security</h2>
+            <p>Your data is protected by:</p>
+            <ul>
+                <li>Local encryption of your dream database</li>
+                <li>Secure HTTPS connections for any cloud features</li>
+                <li>No cloud storage of personal data</li>
             </ul>
 
-            <h2>Data Sharing</h2>
-            <p>We do not sell, trade, or rent your personal information to third parties. We may share anonymized, aggregated data for analytical purposes.</p>
-
-            <h2>Your Rights</h2>
-            <p>You have the right to:</p>
+            <h2>Your Control</h2>
+            <p>You have complete control over your data:</p>
             <ul>
-                <li>Access your data stored in the app</li>
-                <li>Export your dream journal</li>
-                <li>Delete all your data from the app</li>
-                <li>Opt out of analytics collection</li>
+                <li>Export your dream journal at any time</li>
+                <li>Delete all data from within the app</li>
+                <li>Use the app entirely offline (except for AI features)</li>
             </ul>
 
             <h2>Children's Privacy</h2>
