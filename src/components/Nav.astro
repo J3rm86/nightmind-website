@@ -1,0 +1,42 @@
+---
+const currentPath = Astro.url.pathname;
+
+const links = [
+    { href: '/', label: 'Home' },
+    { href: '/privacy', label: 'Privacy Policy' },
+    { href: '/terms', label: 'Terms of Service' },
+];
+---
+
+<nav>
+    {links.map(link => (
+        <a
+            href={link.href}
+            class:list={[{ active: currentPath === link.href || currentPath === link.href + '/' }]}
+        >
+            {link.label}
+        </a>
+    ))}
+</nav>
+
+<style>
+    nav {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    nav a {
+        color: #a855f7;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: 500;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    nav a.active {
+        text-decoration: underline;
+    }
+</style>

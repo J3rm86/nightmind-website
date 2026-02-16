@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Delete Your Data - NightMind" description="How to delete your data from NightMind">
+    <header slot="header">
+        <h1>🌙 Delete Your Data</h1>
+    </header>
+
+    <div class="card">
+        <h2>How to Delete Your Data</h2>
+
+        <div class="highlight info">
+            <strong>Good news:</strong> All your dream data is stored locally on your device, not on external servers. You have complete control over your data.
+        </div>
+
+        <p>To delete all your data from NightMind, follow these steps:</p>
+
+        <ol>
+            <li>Open the <strong>NightMind</strong> app on your device</li>
+            <li>Tap the <strong>Settings</strong> icon (gear icon)</li>
+            <li>Scroll down to find <strong>"Delete All Data"</strong></li>
+            <li>Tap <strong>"Delete All Data"</strong></li>
+            <li>Confirm the deletion when prompted</li>
+        </ol>
+
+        <div class="highlight warning">
+            <strong>Warning:</strong> This action is permanent and cannot be undone. All your dream entries, settings, and generated videos will be permanently deleted from your device.
+        </div>
+
+        <h2>What Gets Deleted</h2>
+        <ul>
+            <li>All dream journal entries</li>
+            <li>All generated videos and thumbnails</li>
+            <li>All AI dream analyses</li>
+            <li>App settings and preferences</li>
+            <li>Local encryption keys</li>
+        </ul>
+
+        <h2>Data on External Services</h2>
+        <p>NightMind uses minimal external services:</p>
+        <ul>
+            <li><strong>Device ID:</strong> An anonymous identifier used for rate limiting. This is not linked to any personal information and cannot be used to identify you.</li>
+            <li><strong>RevenueCat:</strong> If you made purchases, RevenueCat maintains purchase records as required by Apple/Google. Contact RevenueCat directly for purchase-related data requests.</li>
+        </ul>
+
+        <h2>Alternative: Uninstall the App</h2>
+        <p>Uninstalling NightMind from your device will also remove all locally stored data, including your dream entries and generated content.</p>
+
+        <h2>Contact</h2>
+        <p>If you have questions about data deletion or need assistance, contact:</p>
+        <p><strong>Email:</strong> mccutcheon.jeremiah@gmail.com</p>
+    </div>
+</BaseLayout>
+
+<style>
+    header {
+        text-align: center;
+        padding: 40px 0;
+        color: white;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        color: white;
+    }
+</style>
