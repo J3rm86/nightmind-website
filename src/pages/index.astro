@@ -12,11 +12,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <a href="https://play.google.com/store/apps/details?id=com.clutchsoftware.nightmind" target="_blank" rel="noopener">
                 <img src="/images/google-play-badge.png" alt="Get it on Google Play" height="50">
             </a>
-            <!-- App Store badge - uncomment when available
-            <a href="#" target="_blank" rel="noopener">
+            <a href="#" class="coming-soon" title="Coming soon to iOS">
                 <img src="/images/app-store-badge.svg" alt="Download on the App Store" height="50">
+                <span class="badge-overlay">Coming Soon</span>
             </a>
-            -->
         </div>
     </header>
 
@@ -96,6 +95,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <a href="https://play.google.com/store/apps/details?id=com.clutchsoftware.nightmind" target="_blank" rel="noopener">
                 <img src="/images/google-play-badge.png" alt="Get it on Google Play" height="60">
             </a>
+            <a href="#" class="coming-soon" title="Coming soon to iOS">
+                <img src="/images/app-store-badge.svg" alt="Download on the App Store" height="60">
+                <span class="badge-overlay">Coming Soon</span>
+            </a>
         </div>
     </div>
 </BaseLayout>
@@ -143,6 +146,30 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     .app-badges img:hover {
         transform: scale(1.05);
+    }
+
+    .app-badges .coming-soon {
+        position: relative;
+        opacity: 0.7;
+        cursor: default;
+    }
+
+    .app-badges .coming-soon:hover img {
+        transform: none;
+    }
+
+    .badge-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        white-space: nowrap;
     }
 
     /* How It Works */
